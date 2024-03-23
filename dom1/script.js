@@ -54,9 +54,9 @@ console.dir(elementsALL2);
 
 // // DOM Manipulation Property
 // tagNAME  :: return tag for element node
-// innerText
-// innerHTML
-// textContent
+// innerText  :: return the text content of the element and all its children
+// innerHTML :: return the plain text or html contents in the elements 
+// textContent : return textual content even for hidden elements
 
 let firstEl = document.querySelector("p");
 console.dir(firstEl);
