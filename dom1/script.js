@@ -51,3 +51,23 @@ console.dir(elements2);
 let elementsALL2 = document.querySelectorAll("#heading"); // return NODE LIST
 console.log(elementsALL2);
 console.dir(elementsALL2);
+
+// // DOM Manipulation Property
+// tagNAME  :: return tag for element node
+// innerText
+// innerHTML
+// textContent
+
+let firstEl = document.querySelector("p");
+console.dir(firstEl);
+console.dir(firstEl.tagName);
+
+// every nodes(elements in DOM TREE)
+// all have firstChild and lastChild Property
+console.dir(document.body.firstChild);
+
+// DOM Have
+// 3 types of Nodes
+// elements  -- main
+// comments
+// text nodes`
