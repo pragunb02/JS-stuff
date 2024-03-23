@@ -1,0 +1,26 @@
+h1 {
+  color: blue;
+  text-decoration: line-through;
+  background-color: aliceblue;
+}
+
+/* //id */
+#heading {
+  color: rgb(255, 0, 0);
+  text-decoration: dashed;
+  background-color: darkslateblue;
+}
+
+/* // .class */
+.c1 {
+  color: pink;
+}
+
+body {
+  background-color: aqua;
+}
+
+button {
+  background-color: brown;
+  color: aquamarine;
+}
