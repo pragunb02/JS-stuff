@@ -43,3 +43,60 @@ const fun = () => {
 };
 
 setTimeout(fun, 4000);
+
+// callback hell-nested callback
+
+function getData(dataID) {
+  // database taking time
+  setTimeout(() => {
+    console.log(`DATA: ${dataID}`);
+  }, 2000);
+  // console.log(`DATA:${dataID}`);
+}
+
+getData(1);
+
+function getData1(dataID, getNextData) {
+  // database taking time
+  setTimeout(() => {
+    console.log(`DATA: ${dataID}`);
+    if (getNextData) {
+      getNextData();
+    }
+    // console.log(`DATA: ${dataID}`);
+  }, 8000);
+  // console.log(`DATA:${dataID}`);
+}
+
+// ** wronng
+getData1(1, getData1(2));
+
+getData1(1, () => {
+  // call back se function
+  getData1(2);
+});
+
+getData1(4, () => {
+  // call back se function
+  console.log("getting data6...");
+  getData1(6, () => {
+    console.log("getting data7...");
+    getData1(7, () => {
+      console.log("getting data9...");
+      getData1(9);
+    });
+  });
+});
+
+// call back hell difficult to understand
+// solution : Promises
+
+// promises is for eventual completetion of task
+// promises is an object in JS
+
+// let promise = new Promise((resolve,reject)=>{...})
+//                            function with 2 handlers
+
+// resolve and reject are callbacks provided by js
+
+// next file
