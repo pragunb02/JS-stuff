@@ -1,0 +1,10 @@
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+https://free-apis.github.io/#/
+
+https://alexwohlbruck.github.io/cat-facts/docs/
+
+https://cat-fact.herokuapp.com/facts/
+
