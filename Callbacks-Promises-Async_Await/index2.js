@@ -1,4 +1,5 @@
 // Async-Await
+
 // async function return promises
 
 async function h2() {
@@ -67,7 +68,7 @@ getALLData1();
 // IIFE is a function that is called immediately as soon as itn is defined
 
 // SYNTAX  **  (func)();
-
+// we did use we need to call func to execute async-await unlike we did in callback promises
 (async function () {
   console.log("fetching data1....");
   await getData1(112);

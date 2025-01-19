@@ -38,6 +38,8 @@ function getdata(dataId, getNextData) {
     }, 6000);
   });
 }
+
+// API give us Promises
 // console.log(promise2);
 let promise2 = new getdata(123);
 console.log(promise2);
@@ -80,7 +82,7 @@ function asyncFunc() {
 //   p2.then((res) => {});
 // });
 
-// promises chainig
+// promises chainig ,like pehle data1 required then data2
 console.log("Fetching Data1...");
 asyncFunc().then((res) => {
   console.log("Fetching Data2...");

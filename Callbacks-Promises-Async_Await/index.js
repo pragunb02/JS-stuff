@@ -36,7 +36,7 @@ sumCalc2(a, b, (a, b) => {
   console.log(a + b);
 });
 
-// setTimeout is async
+// setTimeout is async and it is also callback
 
 const fun = () => {
   console.log("delayed Func");
